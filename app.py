@@ -3,11 +3,15 @@ import json
 import math
 import re
 import os
-import requests
 
 app = Flask(__name__)
 
-# 🔹 Load data
+def clean_text(text):
+    text = re.sub(r'<.*?>', '', text)
+    text = re.sub(r'[^a-zA-Z0-9 ]', ' ', text)
+    text = text.lower()
+    return text
+
 with open("inverted_index.json", "r") as f:
     inverted_index = json.load(f)
 
@@ -22,7 +26,6 @@ with open("graph.json", "r") as f:
 
 TOTAL_DOCS = len(processed_docs)
 
-# 🔥 PageRank
 def compute_pagerank(graph, iterations=10, d=0.85):
     N = len(graph)
     ranks = {doc: 1/N for doc in graph}
@@ -41,7 +44,6 @@ def compute_pagerank(graph, iterations=10, d=0.85):
 
 pagerank = compute_pagerank(graph)
 
-# 🔥 Highlight words in preview
 def highlight_text(text, words):
     def repl(match):
         return f"<span class='hl'>{match.group(0)}</span>"
@@ -52,7 +54,6 @@ def highlight_text(text, words):
 
     return text
 
-# 🔥 Better snippet (center around first match)
 def make_snippet(text, words, window=120):
     text_lower = text.lower()
     idx = -1
@@ -76,17 +77,15 @@ def make_snippet(text, words, window=120):
 
     return snippet
 
-# 🔥 SEARCH FUNCTION
 def search(query):
-    query = query.lower().strip()
+    query = clean_text(query)
     words = query.split()
 
     if not words:
-        return [],[]
+        return [], []
 
     result_docs = None
 
-    # AND logic
     for word in words:
         if word in inverted_index:
             docs = set(inverted_index[word])
@@ -95,26 +94,27 @@ def search(query):
             else:
                 result_docs = result_docs.intersection(docs)
         else:
-            return [],[]
+            return [], []
 
     scores = {}
 
     for doc_id in result_docs:
+        doc_id_str = str(doc_id)
+
         score = 0
         for word in words:
-            tf = processed_docs[doc_id].count(word)
+            tf = processed_docs[doc_id_str].count(word)
             df = len(inverted_index[word])
             idf = math.log(TOTAL_DOCS / (1 + df))
             score += tf * idf
 
-        score += pagerank.get(doc_id, 0)
-        scores[doc_id] = score
+        score += pagerank.get(doc_id_str, 0)
+        scores[doc_id_str] = score
 
     sorted_docs = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
     return sorted_docs, words
 
-# 🔥 MODERN HTML UI
 HTML = """
 <!DOCTYPE html>
 <html>
@@ -159,17 +159,14 @@ def home():
     if request.method == "POST":
         query = request.form["query"]
         results, words = search(query)
-        print("DEBUG RESULTS:", results)
 
         for doc_id, score in results:
-            raw_text = documents[doc_id]
+            raw_text = documents[str(doc_id)]
             snippet = make_snippet(raw_text, words)
             highlighted = highlight_text(snippet, words)
-
-            results_data.append((doc_id, round(score,3), highlighted))
+            results_data.append((doc_id, round(score, 3), highlighted))
 
     return render_template_string(HTML, results=results_data)
-
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

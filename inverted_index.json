@@ -44,8 +44,12 @@
   "avoid": [
     "0"
   ],
-  "operationslearn": [
+  "operations": [
     "0"
+  ],
+  "learn": [
+    "0",
+    "3"
   ],
   "more": [
     "0",
@@ -97,11 +101,13 @@
     "3",
     "4"
   ],
-  "examplecom": [
+  "com": [
     "1"
   ],
-  "exampleorg": [
-    "1"
+  "org": [
+    "1",
+    "3",
+    "4"
   ],
   "are": [
     "1",
@@ -314,7 +320,9 @@
     "4"
   ],
   "http": [
-    "1"
+    "1",
+    "3",
+    "4"
   ],
   "further": [
     "1",
@@ -324,8 +332,12 @@
   "reading": [
     "1"
   ],
-  "ianamanaged": [
+  "iana": [
     "1"
+  ],
+  "managed": [
+    "1",
+    "3"
   ],
   "reserved": [
     "1"
@@ -340,8 +352,15 @@
     "3",
     "4"
   ],
-  "20170513": [
+  "2017": [
     "1"
+  ],
+  "05": [
+    "1"
+  ],
+  "13": [
+    "1",
+    "3"
   ],
   "names": [
     "1",
@@ -411,9 +430,6 @@
     "3",
     "4"
   ],
-  "iana": [
-    "1"
-  ],
   "functions": [
     "1",
     "3",
@@ -422,8 +438,15 @@
   "coordinate": [
     "1"
   ],
-  "internets": [
-    "1"
+  "internet": [
+    "1",
+    "3",
+    "4"
+  ],
+  "s": [
+    "1",
+    "3",
+    "4"
   ],
   "globally": [
     "1"
@@ -518,7 +541,11 @@
     "3",
     "4"
   ],
-  "franais": [
+  "fran": [
+    "3",
+    "4"
+  ],
+  "ais": [
     "3",
     "4"
   ],
@@ -526,7 +553,11 @@
     "3",
     "4"
   ],
-  "espaol": [
+  "espa": [
+    "3",
+    "4"
+  ],
+  "ol": [
     "3",
     "4"
   ],
@@ -582,7 +613,7 @@
     "3",
     "4"
   ],
-  "httpwwwicannorg": [
+  "www": [
     "3",
     "4"
   ],
@@ -610,7 +641,11 @@
     "3",
     "4"
   ],
-  "hereicannget": [
+  "here": [
+    "3",
+    "4"
+  ],
+  "icannget": [
     "3",
     "4"
   ],
@@ -631,10 +666,6 @@
     "4"
   ],
   "protectionexplore": [
-    "3",
-    "4"
-  ],
-  "icanns": [
     "3",
     "4"
   ],
@@ -738,7 +769,7 @@
     "3",
     "4"
   ],
-  "inportugus": [
+  "inportugu": [
     "3",
     "4"
   ],
@@ -783,10 +814,6 @@
   ],
   "kb": [
     "3"
-  ],
-  "internet": [
-    "3",
-    "4"
   ],
   "corporation": [
     "3",
@@ -838,9 +865,6 @@
   "their": [
     "3",
     "4"
-  ],
-  "managed": [
-    "3"
   ],
   "sponsored": [
     "3",
@@ -1109,9 +1133,6 @@
   "visit": [
     "3"
   ],
-  "learn": [
-    "3"
-  ],
   "features": [
     "3",
     "4"
@@ -1153,7 +1174,11 @@
   "processes": [
     "3"
   ],
-  "nonidentifying": [
+  "non": [
+    "3",
+    "4"
+  ],
+  "identifying": [
     "3"
   ],
   "relate": [
@@ -1426,7 +1451,8 @@
     "4"
   ],
   "generated": [
-    "3"
+    "3",
+    "4"
   ],
   "automatically": [
     "3"
@@ -1455,9 +1481,6 @@
     "3",
     "4"
   ],
-  "identifying": [
-    "3"
-  ],
   "ip": [
     "3"
   ],
@@ -1470,9 +1493,6 @@
     "4"
   ],
   "isp": [
-    "3"
-  ],
-  "datetime": [
     "3"
   ],
   "stamp": [
@@ -1542,10 +1562,6 @@
     "4"
   ],
   "maintain": [
-    "3",
-    "4"
-  ],
-  "andor": [
     "3",
     "4"
   ],
@@ -2202,10 +2218,6 @@
   "response": [
     "3"
   ],
-  "partys": [
-    "3",
-    "4"
-  ],
   "receive": [
     "3"
   ],
@@ -2323,9 +2335,6 @@
   "transferring": [
     "3"
   ],
-  "nonidentifiable": [
-    "3"
-  ],
   "united": [
     "3",
     "4"
@@ -2342,10 +2351,6 @@
   ],
   "staff": [
     "3"
-  ],
-  "thirdparty": [
-    "3",
-    "4"
   ],
   "located": [
     "3"
@@ -2394,7 +2399,13 @@
     "3",
     "4"
   ],
-  "872010ec": [
+  "87": [
+    "3"
+  ],
+  "2010": [
+    "3"
+  ],
+  "ec": [
     "3"
   ],
   "future": [
@@ -2613,9 +2624,6 @@
     "3",
     "4"
   ],
-  "privacyrelated": [
-    "3"
-  ],
   "taken": [
     "3"
   ],
@@ -2691,7 +2699,7 @@
   "wishes": [
     "3"
   ],
-  "optout": [
+  "opt": [
     "3"
   ],
   "unsubscribe": [
@@ -2714,9 +2722,6 @@
     "4"
   ],
   "children": [
-    "3"
-  ],
-  "13": [
     "3"
   ],
   "child": [
@@ -2953,7 +2958,7 @@
     "3",
     "4"
   ],
-  "rdrsdata": [
+  "rdrs": [
     "3",
     "4"
   ],
@@ -3037,7 +3042,10 @@
   "behavior": [
     "4"
   ],
-  "antiharassment": [
+  "anti": [
+    "4"
+  ],
+  "harassment": [
     "4"
   ],
   "compliant": [
@@ -3094,16 +3102,13 @@
   "found": [
     "4"
   ],
-  "httpswwwicannorgprivacypolicy": [
+  "https": [
     "4"
   ],
   "describes": [
     "4"
   ],
   "why": [
-    "4"
-  ],
-  "httpswwwicannorgprivacycookies": [
     "4"
   ],
   "signifying": [
@@ -3304,10 +3309,10 @@
   "spam": [
     "4"
   ],
-  "machinegenerated": [
+  "machine": [
     "4"
   ],
-  "randomlygenerated": [
+  "randomly": [
     "4"
   ],
   "unethical": [
@@ -3496,9 +3501,6 @@
   "useful": [
     "4"
   ],
-  "nonharmful": [
-    "4"
-  ],
   "taking": [
     "4"
   ],
@@ -3556,7 +3558,7 @@
   "direct": [
     "4"
   ],
-  "addon": [
+  "add": [
     "4"
   ],
   "hyperlinks": [
@@ -3670,7 +3672,13 @@
   "section": [
     "4"
   ],
-  "512c3": [
+  "512": [
+    "4"
+  ],
+  "c": [
+    "4"
+  ],
+  "3": [
     "4"
   ],
   "signature": [
@@ -3793,10 +3801,16 @@
   "tel": [
     "4"
   ],
-  "3103015800": [
+  "310": [
     "4"
   ],
-  "512f": [
+  "301": [
+    "4"
+  ],
+  "5800": [
+    "4"
+  ],
+  "f": [
     "4"
   ],
   "impose": [
@@ -3841,7 +3855,7 @@
   "written": [
     "4"
   ],
-  "counternotice": [
+  "counter": [
     "4"
   ],
   "removal": [
@@ -3994,7 +4008,10 @@
   "exceed": [
     "4"
   ],
-  "2500": [
+  "25": [
+    "4"
+  ],
+  "00": [
     "4"
   ],
   "jurisdictions": [
@@ -4033,7 +4050,7 @@
   "uninterrupted": [
     "4"
   ],
-  "errorfree": [
+  "error": [
     "4"
   ],
   "components": [
@@ -4061,9 +4078,6 @@
     "4"
   ],
   "particular": [
-    "4"
-  ],
-  "noninfringement": [
     "4"
   ],
   "governing": [
@@ -4165,9 +4179,6 @@
   "piracy": [
     "4"
   ],
-  "c": [
-    "4"
-  ],
   "injunctive": [
     "4"
   ],
@@ -4210,13 +4221,10 @@
   "mutual": [
     "4"
   ],
-  "arbitrators": [
-    "4"
-  ],
   "final": [
     "4"
   ],
-  "nonappealable": [
+  "appealable": [
     "4"
   ],
   "judgment": [

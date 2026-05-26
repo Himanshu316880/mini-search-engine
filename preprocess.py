@@ -16,7 +16,8 @@ for doc_id, text in documents.items():
 
     text = re.sub(r'[^a-z0-9\s]', '', text)
 
-    words = text.split()
+    clean = clean_text(text)  
+    words = clean.split()     
 
     clean_words = []
     for word in words:
